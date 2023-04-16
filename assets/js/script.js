@@ -1,3 +1,12 @@
+const board = document.querySelector("#board");
+
+//create a section & give it a class of 'square'
+const squaresContainer = document.createElement('section');
+squaresContainer.setAttribute('class', 'square');
+
+//append the section to the board div
+board.appendChild(squaresContainer);
+
 const cardArray = [
 {
     name: 'robot 1', 
