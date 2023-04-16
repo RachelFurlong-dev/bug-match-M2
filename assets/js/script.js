@@ -38,13 +38,24 @@ const cardArray = [
 },
 {
     name: 'robot 8', 
-    img: 'img/white-insect-robot.png',
+    img: 'img/white-insect-robot7.png',
 }
 ];
-//for each item in the array - create a div & store in variable called card
+
+//for each item in the array - loop through the array and create a div
 cardArray.forEach(item => {
     const card = document.createElement('div'); 
-});
-//add css style to card
+
+//add card css style to div
 card.classList.add('card');
 
+//add a data attribute of name to the div
+card.dataset.name = item.name;
+
+//add the background image to the div
+card.style.backgroundImage = `url(${item.img})`;
+
+//add the div to the layout
+squaresContainer.appendChild(card);
+
+});
