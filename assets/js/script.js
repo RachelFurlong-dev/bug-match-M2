@@ -42,8 +42,11 @@ const cardArray = [
 }
 ];
 
+//duplicate the cardArray and assign to variable gameBoard
+let gameBoard = cardArray.concat(cardArray);
+
 //for each item in the array - loop through the array and create a div
-cardArray.forEach(item => {
+gameBoard.forEach(item => {
 const card = document.createElement('div'); 
 
 //add card css style to div
@@ -57,3 +60,4 @@ card.style.backgroundImage = `url(${item.img})`;
 
 squaresContainer.appendChild(card);
 });
+
