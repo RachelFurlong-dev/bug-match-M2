@@ -44,7 +44,7 @@ const cardArray = [
 
 //for each item in the array - loop through the array and create a div
 cardArray.forEach(item => {
-    const card = document.createElement('div'); 
+const card = document.createElement('div'); 
 
 //add card css style to div
 card.classList.add('card');
@@ -55,7 +55,5 @@ card.dataset.name = item.name;
 //add the background image to the div
 card.style.backgroundImage = `url(${item.img})`;
 
-//add the div to the layout
 squaresContainer.appendChild(card);
-
 });
