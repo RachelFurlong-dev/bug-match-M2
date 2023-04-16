@@ -41,3 +41,10 @@ const cardArray = [
     img: 'img/white-insect-robot.png',
 }
 ];
+//for each item in the array - create a div & store in variable called card
+cardArray.forEach(item => {
+    const card = document.createElement('div'); 
+});
+//add css style to card
+card.classList.add('card');
+
