@@ -7,6 +7,8 @@ squaresContainer.setAttribute('class', 'square');
 //append the section to the board div
 board.appendChild(squaresContainer);
 
+let clickCount = 0;
+
 const cardArray = [
 {
     name: 'robot 1', 
@@ -26,7 +28,7 @@ const cardArray = [
 },
 {
     name: 'robot 5', 
-    img: 'img/orange-insect-robot.png',
+    img: 'assets/img/orange-insect-robot.png',
 },
 {
     name: 'robot 6', 
@@ -66,6 +68,8 @@ squaresContainer.addEventListener('click', event => {
     if (clicked.nodeName === 'section'){
         return
     }
-    console.log('selected');
-})
-
+    if (clickCount < 2) {
+        clickCount++; 
+        console.log('selected');
+    }
+});
