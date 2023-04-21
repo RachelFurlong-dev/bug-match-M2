@@ -10,19 +10,19 @@ board.appendChild(squaresContainer);
 const cardArray = [
 {
     name: 'robot 1', 
-    img: 'img/alien-insect-robot.png',
+    img: 'assets/img/alien-insect-robot.png',
 },
 {
     name: 'robot 2', 
-    img: 'img/alien-insect-robot2.png',
+    img: 'assets/img/alien-insect-robot2.png',
 },
 {
     name: 'robot 3', 
-    img: 'img/blue-insect-robot.png',
+    img: 'assets/img/blue-insect-robot.png',
 },
 {
     name: 'robot 4', 
-    img: 'img/green-insect-robot.png',
+    img: 'assets/img/green-insect-robot.png',
 },
 {
     name: 'robot 5', 
@@ -30,15 +30,15 @@ const cardArray = [
 },
 {
     name: 'robot 6', 
-    img: 'img/pink-insect-robot.png',
+    img: 'assets/img/pink-insect-robot.png',
 },
 {
     name: 'robot 7', 
-    img: 'img/reddish-insect-robot.png',
+    img: 'assets/img/reddish-insect-robot.png',
 },
 {
     name: 'robot 8', 
-    img: 'img/white-insect-robot7.png',
+    img: 'assets/img/white-insect-robot7.png',
 }
 ];
 
@@ -60,4 +60,12 @@ card.style.backgroundImage = `url(${item.img})`;
 
 squaresContainer.appendChild(card);
 });
+
+squaresContainer.addEventListener('click', event => {
+    const clicked = event.target;
+    if (clicked.nodeName === 'section'){
+        return
+    }
+    console.log('selected');
+})
 
