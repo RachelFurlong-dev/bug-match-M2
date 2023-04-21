@@ -8,6 +8,8 @@ squaresContainer.setAttribute('class', 'square');
 board.appendChild(squaresContainer);
 
 let clickCount = 0;
+let cardClickOne = '';
+let cardClickTwo = '';
 
 const cardArray = [
 {
@@ -70,6 +72,15 @@ squaresContainer.addEventListener('click', event => {
     }
     if (clickCount < 2) {
         clickCount++; 
-        console.log('selected');
+        if(clickCount === 1){
+            cardClickOne = clicked.dataset.name;
+            console.log('first choice');
+        }else {
+            cardClickTwo = clicked.dataset.name;
+            console.log('second choice');
+        }
+        if (cardClickOne === cardClickTwo){
+            console.log("run card match function");
+        }
     }
 });
