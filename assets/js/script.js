@@ -11,6 +11,7 @@ let clickCount = 0;
 let cardClickOne = '';
 let cardClickTwo = '';
 let prevTarget = null;
+let delay = 800;
 
 const cardArray = [
 {
@@ -69,11 +70,23 @@ squaresContainer.appendChild(card);
 //checking for a match function
 
 const isMatch = () => {
-    let squareclick = document.querySelectorAll('.squareclick')
-    squareclick.forEach((card) => {
+    let squareclicked = document.querySelectorAll('.squareclick')
+    squareclicked.forEach((card) => {
       card.classList.add('ismatch')
-    })
-  }
+    });
+  };
+
+// reset cards
+const resetCard = () => {
+    cardClickOne = '';
+    cardClickTwo = '';
+    clickCount = 0;
+
+    let squareClicked = document.querySelectorAll('.squareclick');
+    squareClicked.forEach(card => {
+        card.classList.remove('squareclick');
+    });
+};
 
 //listening for clicks and checking for match
 
@@ -95,8 +108,9 @@ squaresContainer.addEventListener('click', event => {
         }
         if (cardClickOne !== '' && cardClickTwo !== '') {
             if (cardClickOne === cardClickTwo) {
-              isMatch();
+              setTimeout(isMatch, delay)
             }
+            setTimeout(resetCard, delay)
           }
           prevTarget = clicked;
         }
