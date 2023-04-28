@@ -70,9 +70,9 @@ squaresContainer.appendChild(card);
 //checking for a match function
 
 const isMatch = () => {
-    let squareclicked = document.querySelectorAll('.squareclick')
+    let squareclicked = document.querySelectorAll('.squareclick');
     squareclicked.forEach((card) => {
-      card.classList.add('ismatch')
+      card.classList.add('ismatch');
     });
   };
 
@@ -94,23 +94,23 @@ squaresContainer.addEventListener('click', event => {
     const clicked = event.target;
     
     if (clicked.nodeName === 'SECTION' || clicked === prevTarget){
-        return
+        return;
     }
 
     if (clickCount < 2) {
         clickCount++; 
         if(clickCount === 1){
             cardClickOne = clicked.dataset.name;
-            clicked.classList.add('squareclick')
+            clicked.classList.add('squareclick');
         }else {
             cardClickTwo = clicked.dataset.name;
-            clicked.classList.add('squareclick')
+            clicked.classList.add('squareclick');
         }
         if (cardClickOne !== '' && cardClickTwo !== '') {
             if (cardClickOne === cardClickTwo) {
-              setTimeout(isMatch, delay)
+              setTimeout(isMatch, delay);
             }
-            setTimeout(resetCard, delay)
+            setTimeout(resetCard, delay);
           }
           prevTarget = clicked;
         }
