@@ -65,6 +65,13 @@ card.style.backgroundImage = `url(${item.img})`;
 squaresContainer.appendChild(card);
 });
 
+const isMatch = () => {
+    let squareclick = document.querySelectorAll('.squareclick')
+    squareclick.forEach((card) => {
+      card.classList.add('ismatch')
+    })
+  }
+
 squaresContainer.addEventListener('click', event => {
     const clicked = event.target;
     if (clicked.nodeName === 'section'){
@@ -74,13 +81,15 @@ squaresContainer.addEventListener('click', event => {
         clickCount++; 
         if(clickCount === 1){
             cardClickOne = clicked.dataset.name;
-            console.log('first choice');
+            clicked.classList.add('squareclick')
         }else {
             cardClickTwo = clicked.dataset.name;
-            console.log('second choice');
+            clicked.classList.add('squareclick')
         }
         if (cardClickOne === cardClickTwo){
-            console.log("run card match function");
+            isMatch();
         }
     }
 });
+
+

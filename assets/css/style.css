@@ -52,3 +52,12 @@ button{
     border-radius:10px;
     cursor:pointer;
 }
+
+.squareclick {
+    border: 2px solid red;
+}
+
+.ismatch {
+    border: 2px solid yellow;
+    
+}
