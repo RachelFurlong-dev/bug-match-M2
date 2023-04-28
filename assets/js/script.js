@@ -65,6 +65,8 @@ card.style.backgroundImage = `url(${item.img})`;
 squaresContainer.appendChild(card);
 });
 
+//checking for a match 
+
 const isMatch = () => {
     let squareclick = document.querySelectorAll('.squareclick')
     squareclick.forEach((card) => {
@@ -72,9 +74,11 @@ const isMatch = () => {
     })
   }
 
+//listening for clicks and checking for match
+
 squaresContainer.addEventListener('click', event => {
     const clicked = event.target;
-    if (clicked.nodeName === 'section'){
+    if (clicked.nodeName === 'SECTION'){
         return
     }
     if (clickCount < 2) {
