@@ -10,6 +10,7 @@ board.appendChild(squaresContainer);
 let clickCount = 0;
 let cardClickOne = '';
 let cardClickTwo = '';
+let prevTarget = null;
 
 const cardArray = [
 {
@@ -65,7 +66,7 @@ card.style.backgroundImage = `url(${item.img})`;
 squaresContainer.appendChild(card);
 });
 
-//checking for a match 
+//checking for a match function
 
 const isMatch = () => {
     let squareclick = document.querySelectorAll('.squareclick')
@@ -78,9 +79,11 @@ const isMatch = () => {
 
 squaresContainer.addEventListener('click', event => {
     const clicked = event.target;
-    if (clicked.nodeName === 'SECTION'){
+    
+    if (clicked.nodeName === 'SECTION' || clicked === prevTarget){
         return
     }
+
     if (clickCount < 2) {
         clickCount++; 
         if(clickCount === 1){
@@ -90,10 +93,13 @@ squaresContainer.addEventListener('click', event => {
             cardClickTwo = clicked.dataset.name;
             clicked.classList.add('squareclick')
         }
-        if (cardClickOne === cardClickTwo){
-            isMatch();
+        if (cardClickOne !== '' && cardClickTwo !== '') {
+            if (cardClickOne === cardClickTwo) {
+              isMatch();
+            }
+          }
+          prevTarget = clicked;
         }
-    }
-});
+    });
 
 
