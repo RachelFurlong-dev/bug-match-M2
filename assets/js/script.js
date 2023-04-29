@@ -1,3 +1,7 @@
+let score = 0;
+
+document.querySelector('#score').style.visibility = 'hidden';
+
 const board = document.querySelector("#board");
 
 //create a section & give it a class of 'square'
@@ -78,9 +82,14 @@ card.appendChild(back);
 });
 
 
-//checking for a match function
 
+//counting the matches
 const isMatch = () => {
+    score ++;
+    document.querySelector('#score').innerText = score;
+    document.querySelector('#score').style.visibility = "visible";
+
+ //checking for a match function
     let squareClicked = document.querySelectorAll('.squareclick');
     squareClicked.forEach((card) => {
       card.classList.add('ismatch');
