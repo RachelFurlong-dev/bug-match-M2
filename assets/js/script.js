@@ -70,7 +70,7 @@ let back = document.createElement('div');
 back.classList.add('back');
 
 //add the background image to the div
-card.style.backgroundImage = `url(${item.img})`;
+back.style.backgroundImage = `url(${item.img})`;
 
 squaresContainer.appendChild(card);
 card.appendChild(front);
