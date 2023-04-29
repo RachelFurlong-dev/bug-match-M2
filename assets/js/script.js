@@ -109,8 +109,10 @@ squaresContainer.addEventListener('click', event => {
         if (cardClickOne !== '' && cardClickTwo !== '') {
             if (cardClickOne === cardClickTwo) {
               setTimeout(isMatch, delay);
-            }
-            setTimeout(resetCard, delay);
+              setTimeout(resetCard, delay);
+            } else {
+              setTimeout(resetCard, delay);
+          }
           }
           prevTarget = clicked;
         }
