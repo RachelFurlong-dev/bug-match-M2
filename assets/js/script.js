@@ -11,7 +11,6 @@ let clickCount = 0;
 let cardClickOne = '';
 let cardClickTwo = '';
 let prevTarget = null;
-let delay = 800;
 
 const cardArray = [
 {
@@ -126,10 +125,10 @@ squaresContainer.addEventListener('click', event => {
         if (cardClickOne !== '' && cardClickTwo !== '') {
             if (cardClickOne === cardClickTwo) {
               console.log('its a match');
-              setTimeout(isMatch, delay);
-              setTimeout(resetCard, delay);
+              setTimeout(isMatch, 800);
+              setTimeout(resetCard, 800);
             } 
-              setTimeout(resetCard, delay);
+              setTimeout(resetCard, 800);
           }
           prevTarget = clicked;
         }
