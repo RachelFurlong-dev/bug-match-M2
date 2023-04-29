@@ -73,7 +73,11 @@ back.classList.add('back');
 card.style.backgroundImage = `url(${item.img})`;
 
 squaresContainer.appendChild(card);
+squaresContainer.appendChild(front);
+squaresContainer.appendChild(back);
+
 });
+
 
 //checking for a match function
 
