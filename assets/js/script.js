@@ -116,18 +116,20 @@ squaresContainer.addEventListener('click', event => {
         clickCount++; 
         if (clickCount === 1){
             cardClickOne = clicked.parentNode.dataset.name;
+            console.log('choice one');
             clicked.parentNode.classList.add('squareclick');
         } else {
             cardClickTwo = clicked.parentNode.dataset.name;
+            console.log('choice two');
             clicked.parentNode.classList.add('squareclick');
         }
         if (cardClickOne !== '' && cardClickTwo !== '') {
             if (cardClickOne === cardClickTwo) {
+              console.log('its a match');
               setTimeout(isMatch, delay);
               setTimeout(resetCard, delay);
-            } else {
+            } 
               setTimeout(resetCard, delay);
-          }
           }
           prevTarget = clicked;
         }
