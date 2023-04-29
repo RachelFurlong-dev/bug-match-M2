@@ -12,7 +12,7 @@ body{
     
 }
 
-#score {
+/*#score {
     font-family: Poppins, sans-serif;
     font-weight:600px;
     color: rgb(63, 2, 113);
@@ -21,7 +21,7 @@ body{
     margin-top: 0;
     padding: 1rem 1.5rem;
     border-radius:10px;
-}
+}*/
 
 .square {
     max-width: 650px;
@@ -32,17 +32,56 @@ body{
   }
 
 .card {
-margin: 5px;
-border-radius:10px;
-background-color: #999;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-height: 150px;
-width: 150px;       
+    position:relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+    border-radius:10px;
+    background-color: #999;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 150px;       
 }
+
+.card,
+.back,
+.front{
+    height: 150px;
+    width: 150px;
+}
+
+.back,
+.front{
+    position:absolute;
+    backface-visibility:hidden;
+}
+
+.front{
+    background: yellow url('../img/q-mark.png') no-repeat center center / contain;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background-color: green;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.squareclick {
+    transform: rotateY(180deg);
+}
+
+.ismatch {
+    background: white !important;
+    
+}
+
    
-button{
+/*button{
     font-family: Poppins, sans-serif;
     font-weight:600px;
     color: rgb(63, 2, 113);
@@ -51,13 +90,5 @@ button{
     padding: 1rem 1.5rem;
     border-radius:10px;
     cursor:pointer;
-}
+}*/
 
-.squareclick {
-    border: 2px solid red;
-}
-
-.ismatch {
-    border: 2px solid yellow;
-    
-}
