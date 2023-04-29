@@ -73,8 +73,8 @@ back.classList.add('back');
 card.style.backgroundImage = `url(${item.img})`;
 
 squaresContainer.appendChild(card);
-squaresContainer.appendChild(front);
-squaresContainer.appendChild(back);
+card.appendChild(front);
+card.appendChild(back);
 
 });
 
@@ -105,17 +105,17 @@ const resetCard = () => {
 squaresContainer.addEventListener('click', event => {
     const clicked = event.target;
     
-    if (clicked.nodeName === 'SECTION' || clicked === prevTarget){
+    if (clicked.nodeName === 'SECTION' || clicked === prevTarget || clicked.parentNode.classList.contains('squareclick')){
         return;
     }
 
     if (clickCount < 2) {
         clickCount++; 
         if(clickCount === 1){
-            cardClickOne = clicked.dataset.name;
+            cardClickOne = clicked.parentNode.dataset.name;
             clicked.classList.add('squareclick');
         }else {
-            cardClickTwo = clicked.dataset.name;
+            cardClickTwo = clicked.parentNode.dataset.name;
             clicked.classList.add('squareclick');
         }
         if (cardClickOne !== '' && cardClickTwo !== '') {
