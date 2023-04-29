@@ -61,6 +61,14 @@ card.classList.add('card');
 //add a data attribute of name to the div
 card.dataset.name = item.name;
 
+//add front and back elements
+
+let front = document.createElement('div');
+front.classList.add('front');
+
+let back = document.createElement('div');
+back.classList.add('back');
+
 //add the background image to the div
 card.style.backgroundImage = `url(${item.img})`;
 
