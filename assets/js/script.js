@@ -2,6 +2,9 @@ let score = 0;
 
 document.querySelector('#score').style.visibility = 'hidden';
 
+const playAgainBtn = document.querySelector('button');
+playAgainBtn.addEventListener('click', playAgain)
+
 const board = document.querySelector("#board");
 
 //create a section & give it a class of 'square'
@@ -81,8 +84,6 @@ card.appendChild(back);
 
 });
 
-
-
 //counting the matches
 const isMatch = () => {
     score ++;
@@ -142,5 +143,7 @@ squaresContainer.addEventListener('click', event => {
           prevTarget = clicked;
         }
     });
-
+function playAgain() {
+    window.location.reload();
+}
 
