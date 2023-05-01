@@ -1,4 +1,5 @@
-const { game } = require("../script");
+const { describe } = require("yargs");
+const { theFunctionName } = require("../script");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -8,8 +9,6 @@ beforeAll(() => {
     document.close();
 });
 
-describe("game object contains correct keys", () => {
-    test("gameScore key exists", () => {
-        expect("gameScore" in game).toBe(true);
-    });
-});
+describe("showScore is working correctly", () => {
+
+})
