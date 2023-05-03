@@ -1,4 +1,4 @@
-score = 0;
+let score = 0;
 
 const board = document.querySelector("#board");
 
@@ -7,7 +7,7 @@ const squaresContainer = document.createElement('section');
 squaresContainer.setAttribute('class', 'square');
 
 //append the section to the board div
-//board.appendChild(squaresContainer);
+board.appendChild(squaresContainer);
 
 let clickCount = 0;
 let cardClickOne = '';
@@ -85,7 +85,13 @@ const isMatch = () => {
     squareClicked.forEach((card) => {
       card.classList.add('ismatch');
     });
+    score ++;
+    showScore();
   };
+
+  function showScore() {
+    document.getElementById('score').innerText = score;
+  }
 
 // reset cards
 const resetCard = () => {
