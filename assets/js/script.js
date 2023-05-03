@@ -1,5 +1,9 @@
 let score = 0;
 
+function playAgain() {
+    window.location.reload();
+}
+
 const board = document.querySelector("#board");
 
 //create a section & give it a class of 'square'
@@ -7,7 +11,7 @@ const squaresContainer = document.createElement('section');
 squaresContainer.setAttribute('class', 'square');
 
 //append the section to the board div
-board.appendChild(squaresContainer);
+//board.appendChild(squaresContainer);
 
 let clickCount = 0;
 let cardClickOne = '';
@@ -140,4 +144,4 @@ squaresContainer.addEventListener('click', event => {
         }
     });
 
-    module.exports = { game };    
+   module.exports = cardArray;   
