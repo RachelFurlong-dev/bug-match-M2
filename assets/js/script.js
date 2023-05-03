@@ -7,7 +7,7 @@ const squaresContainer = document.createElement('section');
 squaresContainer.setAttribute('class', 'square');
 
 //append the section to the board div
-//board.appendChild(squaresContainer);
+board.appendChild(squaresContainer);
 
 let clickCount = 0;
 let cardClickOne = '';

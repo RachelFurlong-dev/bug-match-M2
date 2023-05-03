@@ -8,6 +8,8 @@ beforeAll(() => {
     document.close();
 });
 
+//testing the array of objects cardArray
+
 describe("test array of objects", () => {
 
 test("checks if an array of objects contains a specific value", () => {
@@ -23,7 +25,9 @@ test("checks if an array of objects contains a specific object", () => {
     img: 'assets/img/pink-insect-robot.png' };
   expect(cardArray).toContainEqual(obj);
 });
-});//end tag describe
+});
+
+//testing elements eist in the DOM
 
 describe("DOM tests", () => {
 	test("h3 should exist", () => {
@@ -34,4 +38,4 @@ describe("DOM tests", () => {
         expect(document.getElementsByTagName("button").length).toBe(2);
     });
 
-});//end tag describe
+});
