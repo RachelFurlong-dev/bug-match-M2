@@ -9,12 +9,19 @@ beforeAll(() => {
 });
 
 describe("test array of objects", () => {
+
 test("checks if an array of objects contains a specific value", () => {
 	const expectedValue = {
 		name: 'robot 1',
 		img: 'assets/img/alien-insect-robot.png',
 	};
 	expect(cardArray).toContainEqual(expectedValue);
+});
+
+test("checks if an array of objects contains a specific object", () => {
+	const obj = { name: 'robot 6', 
+    img: 'assets/img/pink-insect-robot.png' };
+  expect(cardArray).toContainEqual(obj);
 });
 });//end tag describe
 
@@ -23,5 +30,8 @@ describe("DOM tests", () => {
         expect(document.getElementsByTagName("h3").length).toBe(1);
     });
 
-});//end tag describe
+    test("should be two buttons exist in game", () => {
+        expect(document.getElementsByTagName("button").length).toBe(2);
+    });
 
+});//end tag describe
