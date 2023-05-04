@@ -144,4 +144,9 @@ squaresContainer.addEventListener('click', event => {
         window.location.reload();
     } 
 
+//modal js
+$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').trigger('focus')
+  })
+
     module.exports = cardArray;
