@@ -250,4 +250,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - Chris Dixon for games & memory game introduction 
 
-- Ferenc Almasi alternative approach to memory games
+- Chat GPT for help with linking BootStrap modal contact form to Email JS

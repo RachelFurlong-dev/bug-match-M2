@@ -144,9 +144,37 @@ squaresContainer.addEventListener('click', event => {
         window.location.reload();
     } 
 
-//modal js
+//bootstrap modal js
 $('#myModal').on('shown.bs.modal', function () {
 	$('#myInput').trigger('focus')
   })
 
-    module.exports = cardArray;
+//connect contact form in modal to EmailJS
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+//Get the values from the form
+let name = document.getElementById('name').value;
+let email = document.getElementById('email').value;
+let message = document.getElementById('message').value;
+
+//send the email using EmailJS
+emailjs.send('service_kckkvte', 'egxz2hd', {
+  from_name: name,
+  from_email: email,
+  message: message
+}).then(function(response) {
+  console.log('SUCCESS!', response.status, response.text);
+  $('#contact-modal').modal('hide');
+},  function(error) {
+    console.log('FAILED...', error);
+});
+
+//Clear the form fields
+document.getElementById('name').value = '';
+document.getElementById('email').value = '';
+document.getElementById('message').value = '';
+});
+
+
+//module.exports = cardArray;
