@@ -155,5 +155,6 @@ h2 {
 
 /* 404 styles*/
 .bg-not-here{
-    background-color: #721d83;
+    background-color:rgb(63, 2, 113);
+    color:#fff;
 }
