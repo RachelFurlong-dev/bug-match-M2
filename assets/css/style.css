@@ -25,6 +25,16 @@ a.navbar-brand{
     cursor: pointer;
 }
 
+.submit-button{
+    background-color: #ff7f00;
+    border:0px;
+    padding: 12px;
+}
+
+.submit-button:active{
+    background-color: #721d83;  
+} 
+
 /*game board styles*/
 .title{
     color:#fff;
