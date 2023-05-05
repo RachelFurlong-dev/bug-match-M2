@@ -164,6 +164,7 @@ emailjs.send('service_kckkvte', 'egxz2hd', {
   from_email: email,
   message: message
 }).then(function(response) {
+  alert("Your message has been sent - we will reply soon!");
   console.log('SUCCESS!', response.status, response.text);
   $('#contact-modal').modal('hide');
 },  function(error) {
