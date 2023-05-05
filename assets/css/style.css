@@ -153,3 +153,7 @@ h2 {
     transition: 0.2s;
 }
 
+/* 404 styles*/
+.bg-not-here{
+    background-color: #721d83;
+}
