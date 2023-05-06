@@ -29,21 +29,31 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 - :x: *which  has additional levels and increases the number of cards to match*.
 - :x: *which rewards success as my child improves at the game*.
 
--   ### Design
-    -   #### Colour Scheme
-        -   The two main colours used are complementary colours purple, and yellow, which contrast from one another and seem to “jump” or bounce off of one another when used together.
-        (demo colours here)
-    -   #### Typography
-        -   The Poppins font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
-        -   Imagery is important. The largequestionmarks challenge the user to click on them & are designed to be striking and catch the user's attention. The insect robots are created as original images in Stable Diffusion.
+### Design:
 
-*   ### Wireframes
+#### Typography
+ The Poppins font via [Google Fonts:](https://fonts.google.com/) is the main font used throughout the website with Sans Serif as the fallback font in case for any reason the font cannot be displayed in a browser correctly.
 
-    -   Home Page Wireframe - [View](https://github.com/)
+#### Color Scheme:
 
-    -   Mobile Wireframe - [View](https://github.com/)
+*Palette*: **Flip Card Memory Game**
 
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+| Cards | Background |
+| :---: | :---: |
+| ![#FF7GF00](https://via.placeholder.com/15/FF7F00/FF7F00) | ![#3F0270](https://via.placeholder.com/15/3F0270/3F0270) |
+| #3F0270 | #3F0270 |  
+
+#### Imagery:
+[Stable Diffusion](https://stablediffusionweb.com/) generated the insect robots to which I added bright colour backgrounds to make the cards easier to identify.
+
+### Wireframes
+My wireframes were created in Adobe XD as I am familiar with Adobe products and can therefore work more quickly.
+
+-   Mobile ![View](/docs/wireframes/bm-phone-layout.png)
+
+-   Small-Screen ![View](/docs/wireframes/bm-ipad-layout.png)
+
+-   Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 
 ## Features
 
