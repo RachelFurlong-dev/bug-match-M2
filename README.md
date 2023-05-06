@@ -105,15 +105,15 @@ Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 12. [EmailJS:](https://www.emailjs.com/)
     -  Allows sending email directly from Javascript, with no backend development.
 
-### Testing
+## Testing
 
 I have carried out automated and manual testing procedures during the build of this project. In addition, I have tested my code with online validator sites to check for errors. I have also tested the compatibility of the site across a number of current browsers and devices.
 
-## Purposes of manual and automated testing
+### Purposes of manual and automated testing
 
 As this project is to complete the Milestone of the Level 5 Web Appplication Development Diploma with Gateway, it is important to define the reasons for using manual and automated testing and in the context of this JavaScript project. 
 
-## Automated testing principles:
+### Automated testing principles:
 Automated tests are an important part of software development, including JavaScript development, because they provide a way to ensure that code is functioning as expected and to catch any issues that may be introduced as code is modified or new features are added.
 Advantages to this process are catching bugs early - i.e. Automated tests can be run quickly and frequently, allowing developers to catch bugs early, which can save time and reduce the cost of fixing bugs later on.
 Tests can also be used to enforce code quality standards, ensuring that code meets requirements and follows best practices.
@@ -121,51 +121,39 @@ Tests can also be used to enforce code quality standards, ensuring that code mee
 ### Automated testing with Jest
 I have used Jest as an introduction to automated testing to test code already written. The next stage in my development would be to implement the testing process as the product is being built. 
 
-## Tests on the Array of objects 
+### Tests on the Array of Objects 
 Checks if an array of objects: 
-- contains a specific value.
+1. contains a specific value.
 ![View](/docs/jest_tests/jest-test-cardArray-contains-specific-value.png)
-- contains a specific object.
+2. contains a specific object.
 ![View]()
 
-
- 
-
-
-
 ## Testing elements exist in the DOM
-
-
-
-
+Content to be added when tests work properly!
 
 ###Manual testing
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
-
-
 ### Further Testing
-
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-
 ### Manual testing
-- Testing the match card if else statement - [View](docs/manual-testing-images/check-match-testing/eventlistener-check-for-match-test.png)
-- Testing the match card if else statement - [View](docs/manual-testing-images/check-match-testing/eventlistener-check-for-match-console.png)
-- Testing the match card if else statement - [View](docs/manual-testing-images/check-match-testing/eventlistener-check-for-match-console2.png)
-
-
+- Validators
+- PageSpeed Insights
+- Browser testing matrix
 
 ### Known Bugs
-
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   On iphones and Safari the images are not showing - check to be completed on image requirements
+-   When using Jest, the test environment won't run - seems to be related to the DOM e.g. 
+![View](/docs/error-testsuite.png/)
+The test can be run if line 10 commented out.
+This also happens when it reaches the modal - again can run tests if modal commented out.
+- When selecting cards, because the previous Target has been disabled, it affects the users ability to click a previous card after it has been reset after 2 incorrect cards chosen.
 
 ## Deployment
 
@@ -223,6 +211,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   Explanation of storing a variable so it can't be clicked twice [Stack Overflow](https://stackoverflow.com/questions/72204486/how-to-store-previous-event-currenttarget-in-a-variable)
 
+- Chat GPT for help with linking BootStrap modal contact form to Email JS [Chat GPT](https://openai.com/blog/chatgpt)
+
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
 -   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
@@ -231,20 +221,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   All content was written by the developer.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
-
 ### Media
 
 -   All Images were created by the developer.
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   Tim Nelson for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
 
-- Tania Rascia for memory game process
+-   Tania Rascia for memory game process.
 
-- Chris Dixon for games & memory game introduction 
-
-- Chat GPT for help with linking BootStrap modal contact form to Email JS
+-   Chris Dixon for JavSscript games & memory game introduction.
