@@ -1,53 +1,33 @@
 <h1 align="center">Bug Match</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.](https://rachelfurlong-dev.github.io/bug-match-M2/)
 
-This is a memory game by a fictional company called Elephant Games, designed as part of a series of memory games in different formats. The main target users are expected to be primarily – for children (ages 4 – 9years) and their parents, to help develop working memory skills in an enjoyable way and have fun.
+This is a memory game for my Milestone 2 project by a fictional company called Elephant Games, designed as part of a series of memory games in different formats. The main target users are parents, who want to help their child develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="docs/responsive-screenshot.png"></h2>
 
-## User Experience (UX)
-### User Stories
-### Solar System Exploration, 1950s – 1960s
+### User Stories:
 
-- [ ] Mercury
-- [x] Venus
-
-"**_As a user, I would like to_** _______________"
+"**_As a user, I would like to find a memory game_** _______________"
 
 :white_check_mark: *successfully implemented*
 
 :x: *not yet implemented*
 
-- :white_check_mark: *view the site* from **any device** *(mobile, tablet, desktop)*.
-
--   ### Child Goals
-
-    -   #### First Time Visitor Goals
-
-        1. As a First Time Visitor, I want to find a game I enjoy using and have fun.
-        2. As a First Time Visitor, I want a game that makes me want to interact and find out how it works.
-        3. As a First Time Visitor, I want a game that looks exciting and challenges me
-
-    -   #### Returning Visitor Goals
-
-        1. As a Returning Visitor, I want a memory game that counts how many matches I got right.
-        2. As a Returning Visitor, I want to see if I can get the game completed more quickly.
-        3. As a Returning Visitor, I want to get rewarded for completing the game quickly.
-
--   ### Parent Goals    
-
-    -   #### First Time Visitor Goals
-
-        1. As a First Time Visitor, I want my child to play online games which are at the same time visually engaging and educational.
-        2. As a first time visitor, I want a game which helps to improve working memory in an enjoyable way.
-        3. As a First Time Visitor, I want a game that improves my child's focus and concentration skills
-
-    -   #### Returning Visitor Goals
-
-        1. As a Returning Visitor, I want a game that is stimulating and means my child wants to use it again and again.
-        2. As a Returning Visitor, I want a game that indicates progress so my child feels a sense of achievement
-        3. As a Returning Visitor, I want a game that rewards success as my child improves at the game.
+- :white_check_mark: *my child enjoys using and to have fun*.
+- :white_check_mark: *which are at the same time visually engaging and educational*.
+- :white_check_mark: *with functionality that my child enjoys interacting with*.
+- :white_check_mark: *which helps develop my childs memory skills in an enjoyable way*.
+- :white_check_mark: *which counts the score of the matches my child gets right*.
+- :white_check_mark: *which allows my child to reset the game*.
+- :white_check_mark: *that develops my child's focus and concentration skills*.
+- :white_check_mark: *where I can contact the creators about future games available*.
+- :white_check_mark: *my child to be able to view the site* from **any device** *(mobile, tablet, desktop)*.
+- :x: *which randomises the order of the cards at each reset*.
+- :x: *which challenges my child with has a timer to compete against*.
+- :x: *which counts the correct and incorrect matches*.
+- :x: *which  has additional levels and increases the number of cards to match*.
+- :x: *which rewards success as my child improves at the game*.
 
 -   ### Design
     -   #### Colour Scheme
