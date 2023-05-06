@@ -2,11 +2,24 @@
 
 [View the live project here.](https://codeinstitute.net)
 
-This is a Memory Game designed primarily – for children primarily (ages 4 – 9years) - to improve working memory in an enjoyable way and have fun.
+This is a memory game by a fictional company called Elephant Games, designed as part of a series of memory games in different formats. The main target users are expected to be primarily – for children (ages 4 – 9years) and their parents, to help develop working memory skills in an enjoyable way and have fun.
 
 <h2 align="center"><img src=""></h2>
 
 ## User Experience (UX)
+### User Stories
+### Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+
+"**_As a user, I would like to_** _______________"
+
+:white_check_mark: *successfully implemented*
+
+:x: *not yet implemented*
+
+- :white_check_mark: *view the site* from **any device** *(mobile, tablet, desktop)*.
 
 -   ### Child Goals
 

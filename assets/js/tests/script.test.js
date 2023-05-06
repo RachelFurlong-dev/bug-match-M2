@@ -27,7 +27,7 @@ test("checks if an array of objects contains a specific object", () => {
 });
 });
 
-//testing elements eist in the DOM
+//testing elements exist in the DOM
 
 describe("DOM tests", () => {
 	test("h3 should exist", () => {
