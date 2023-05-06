@@ -124,7 +124,7 @@ I have used Jest as an introduction to automated testing to test code already wr
 ### Tests on the Array of Objects 
 Checks if an array of objects: 
 1. contains a specific value.
-![View](/docs/jest_tests/jest-test-cardArray-contains-specific-value.png)
+![View](/docs/issue-affecting-jest-test.png)
 2. contains a specific object.
 ![View]()
 
@@ -150,7 +150,7 @@ Content to be added when tests work properly!
 ### Known Bugs
 -   On iphones and Safari the images are not showing - check to be completed on image requirements
 -   When using Jest, the test environment won't run - seems to be related to the DOM e.g. 
-![View](/docs/error-testsuite.png/)
+![View](/docs/jest_tests/error-testsuite.png)
 The test can be run if line 10 commented out.
 This also happens when it reaches the modal - again can run tests if modal commented out.
 - When selecting cards, because the previous Target has been disabled, it affects the users ability to click a previous card after it has been reset after 2 incorrect cards chosen.
