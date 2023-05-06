@@ -43,7 +43,7 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 | ![#FF7GF00](https://via.placeholder.com/15/FF7F00/FF7F00) | ![#3F0270](https://via.placeholder.com/15/3F0270/3F0270) |
 | #3F0270 | #3F0270 |  
 
-#### Imagery:
+### Imagery:
 [Stable Diffusion](https://stablediffusionweb.com/) generated the insect robots to which I added bright colour backgrounds to make the cards easier to identify.
 
 ### Wireframes
@@ -55,11 +55,19 @@ My wireframes were created in Adobe XD as I am familiar with Adobe products and 
 
 -   Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 
-## Features
+### Features
 
--   Responsive on all device sizes
+-   Create a board of 16 cards which can be flipped when clicking on the card.
+-   If two selected cards match, to flip back and hidden & cannot be reselected.
+-   Add a score button to show when there is a match.
+-   Be able to reset the game.
+-   Be able to message Game Company about more games.
+-   Work on desktop and mobile screens accross browsers.
 
--   Interactive elements
+### Additional features to be implemented
+-  Randomise the display of cards at reset.
+-  Add a score button when cards do not match.
+-  Add a timer to the game.
 
 ## Technologies Used
 
@@ -67,27 +75,35 @@ My wireframes were created in Adobe XD as I am familiar with Adobe products and 
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
+1. [Bootstrap 4.6.2:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness navigation and modal functionality.
+2. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Poppins' font into the style.css file.
+3. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-1. [Git](https://git-scm.com/)
+4. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
+5. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+6. [GitPod:](https://github.com/)
+    - GitHPod was used as the online code editor.
+7. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
     - Photoshop was used to create the logo, resizing images and editing photos for the website.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+8. [Illustrator:](https://www.adobe.com/ie/products/illustrator.html)
+    - Illustrator was used to create the favicon and question mark images for the website.
+9. [XD:](https://www.adobe.com/ie/products/xd.html)
+    - XD was used to create the [wireframes](/docs/wireframes/) during the design process.
+10. [Stable Diffusion:](https://stablediffusionweb.com/)
+    - XD was used to generate the Robot Insect images as part of the design process.
+11. [Jest:](https://jestjs.io/)
+    - Jest is a JavaScript testing framework built on top of Jasmine and maintained by Meta.
+12. [EmailJS:](https://www.emailjs.com/)
+    -  Allows sending email directly from Javascript, with no backend development.
 
 ## Testing
 

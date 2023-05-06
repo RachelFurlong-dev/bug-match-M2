@@ -146,8 +146,8 @@ squaresContainer.addEventListener('click', event => {
 
 //bootstrap modal js
 $('#myModal').on('shown.bs.modal', function () {
-	$('#myInput').trigger('focus')
-  })
+	$('#myInput').trigger('focus');
+  });
 
 //connect contact form in modal to EmailJS
 document.getElementById('contact-form').addEventListener('submit', function(event) {
