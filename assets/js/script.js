@@ -51,6 +51,7 @@ const cardArray = [
 
 //duplicate the cardArray and assign to variable gameBoard
 let gameBoard = cardArray.concat(cardArray);
+gameBoard = gameBoard.sort(() => Math.random() - 0.5);
 
 //for each item in the array - loop through the array and create a div
 gameBoard.forEach(item => {
@@ -98,6 +99,7 @@ const resetCard = () => {
     cardClickOne = '';
     cardClickTwo = '';
     clickCount = 0;
+    prevTarget = null;
 
     let squareClicked = document.querySelectorAll('.squareclick');
     squareClicked.forEach(card => {
