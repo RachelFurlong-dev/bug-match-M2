@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;800&display=swap');
 /*Global styles*/
 body{
@@ -66,15 +73,23 @@ h2 {
 .square {
     max-width: 650px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 
 .card {
     position:relative;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
     transition: all 0.4s linear;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     margin: 5px;
     border-radius:10px;
     background-color: #999;
@@ -95,7 +110,8 @@ h2 {
 .back,
 .front{
     position:absolute;
-    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
 }
 
 .front{
@@ -104,7 +120,8 @@ h2 {
 }
 
 .back{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     background-color: green;
     background-size: contain;
     background-repeat: no-repeat;
@@ -112,7 +129,8 @@ h2 {
 }
 
 .squareclick {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .ismatch .front{
@@ -128,9 +146,14 @@ h2 {
 .controls{
     max-width: 650px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; 
 }
 
 /*reset button styling*/
@@ -150,6 +173,8 @@ h2 {
 .playagain:hover{
     background-color: #ff7f00;
     color: #fff;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -170,4 +195,3 @@ h2 {
     background-color:rgb(63, 2, 113);
     color:#fff !important;
 }
-
