@@ -34,8 +34,8 @@ describe("DOM tests", () => {
         expect(document.getElementsByTagName("h3").length).toBe(1);
     });
 
-    test("should be two buttons exist in game", () => {
-        expect(document.getElementsByTagName("button").length).toBe(2);
+    test("should be three buttons exist in game", () => {
+        expect(document.getElementsByTagName("button").length).toBe(3);
     });
 
 });

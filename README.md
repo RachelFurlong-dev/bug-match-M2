@@ -124,9 +124,9 @@ I have used Jest as an introduction to automated testing to test code already wr
 ### Tests on the Array of Objects 
 Checks if an array of objects: 
 1. contains a specific value.
-![View](/docs/issue-affecting-jest-test.png)
+![View](/docs/jest_tests/jest-test-cardArray-contains-specific-value.png)
 2. contains a specific object.
-![View]()
+![View](/docs/jest_tests/jest-test-cardArray-contains-specific-value.png)
 
 ## Testing elements exist in the DOM
 Content to be added when tests work properly!
