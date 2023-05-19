@@ -1,12 +1,12 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 /*Global styles*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body{
     font-family: Poppins, sans-serif;
     background-color: rgb(63, 2, 113);
@@ -54,20 +54,13 @@ h1 {
     font-weight:800;
   }
 
-h2 {
+h3 {
     font-size: 1.2rem;
   } 
 
 #score {
-    font-family: Poppins, sans-serif;
-    font-weight:bold;
-    color: rgb(63, 2, 113);
-    font-size: 22px;
-    font-weight:600;
-    margin-top: 0;
-    padding: 12px 25px;
-    border-radius:5px;
-    margin-bottom:5px;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 .square {
