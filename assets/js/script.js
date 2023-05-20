@@ -1,5 +1,10 @@
 let score = 0;
 
+ //reload game
+ function playAgain() {
+    window.location.reload();
+} 
+
 const board = document.querySelector("#board");
 
 //create a section & give it a class of 'square'
@@ -142,9 +147,8 @@ squaresContainer.addEventListener('click', event => {
         }
     });
 
-    function playAgain() {
-        window.location.reload();
-    } 
+const playAgainBtn = document.getElementById('playagain');
+playAgainBtn.addEventListener('click', playAgain);
 
 //bootstrap modal js
 $('#myModal').on('shown.bs.modal', function () {

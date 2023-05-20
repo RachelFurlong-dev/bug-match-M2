@@ -151,7 +151,7 @@ h3 {
 
 /*reset button styling*/
 
-.playagain{
+#playagain{
     font-family: Poppins, sans-serif;
     font-weight:bold;
     text-transform: uppercase;
@@ -163,7 +163,7 @@ h3 {
     cursor:pointer;
 }
 
-.playagain:hover{
+#playagain:hover{
     background-color: #ff7f00;
     color: #fff;
     -webkit-transition: 0.2s;
