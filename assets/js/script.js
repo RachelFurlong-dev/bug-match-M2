@@ -3,7 +3,7 @@ let score = 0;
  //reload game
  function playAgain() {
     window.location.reload();
-} 
+}
 
 const board = document.querySelector("#board");
 
@@ -25,11 +25,11 @@ const cardArray = [
     img: 'assets/img/alien-insect-robot.png',
 },
 {
-    name: 'robot 2', 
+    name: 'robot 2',
     img: 'assets/img/alien-insect-robot2.png',
 },
 {
-    name: 'robot 3', 
+    name: 'robot 3',
     img: 'assets/img/blue-insect-robot.png',
 },
 {
@@ -37,19 +37,19 @@ const cardArray = [
     img: 'assets/img/green-insect-robot.png',
 },
 {
-    name: 'robot 5', 
+    name: 'robot 5',
     img: 'assets/img/orange-insect-robot.png',
 },
 {
-    name: 'robot 6', 
+    name: 'robot 6',
     img: 'assets/img/pink-insect-robot.png',
 },
 {
-    name: 'robot 7', 
+    name: 'robot 7',
     img: 'assets/img/reddish-insect-robot.png',
 },
 {
-    name: 'robot 8', 
+    name: 'robot 8',
     img: 'assets/img/white-insect-robot7.png',
 }
 ];
@@ -59,7 +59,7 @@ let gameBoard = cardArray.concat(cardArray);
 gameBoard = gameBoard.sort(() => Math.random() - 0.5);
 
 //for each item in the array - loop through the array and create a div
-gameBoard.forEach(item => {
+gameBoard.forEach((item) => {
 const card = document.createElement('div'); 
 
 //add card css style to div
