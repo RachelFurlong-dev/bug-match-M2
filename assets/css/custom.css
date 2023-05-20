@@ -152,7 +152,7 @@ h3 {
 /*reset button styling*/
 
 #playagain{
-    font-family: Poppins, sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight:bold;
     text-transform: uppercase;
     color: rgb(63, 2, 113);
@@ -173,7 +173,7 @@ h3 {
 
 /* 404 styles*/
 .return-button{
-    font-family: Poppins, sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight:bold;
     text-transform: uppercase;
     color: rgb(63, 2, 113);

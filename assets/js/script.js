@@ -107,7 +107,7 @@ const resetCard = () => {
     prevTarget = null;
 
     let squareClicked = document.querySelectorAll('.squareclick');
-    squareClicked.forEach(card => {
+    squareClicked.forEach((card) => {
         card.classList.remove('squareclick');
     });
 };

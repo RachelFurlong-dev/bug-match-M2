@@ -23,13 +23,13 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 - :white_check_mark: *that develops my child's focus and concentration skills*.
 - :white_check_mark: *where I can contact the creators about future games available*.
 - :white_check_mark: *my child to be able to view the site* from **any device** *(mobile, tablet, desktop)*.
-- :x: *which randomises the order of the cards at each reset*.
+- :white_check_mark: *which randomises the order of the cards at each reset*.
 - :x: *which challenges my child with has a timer to compete against*.
-- :x: *which counts the correct and incorrect matches*.
+- :x: *which counts both the correct and incorrect matches*.
 - :x: *which  has additional levels and increases the number of cards to match*.
 - :x: *which rewards success as my child improves at the game*.
 
-### Design:
+## Design:
 
 #### Typography
  The Roboto font via [Google Fonts:](https://fonts.google.com/) is the main font used throughout the website with Sans Serif as the fallback font in case for any reason the font cannot be displayed in a browser correctly.
@@ -83,9 +83,9 @@ Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 1. [Bootstrap 4.6.2:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness navigation and modal functionality.
 2. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Poppins' font into the style.css file.
+    - Google fonts were used to import the 'Roboto' font into the style.css file.
 3. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for modal functionality.
 4. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 5. [GitHub:](https://github.com/)
@@ -140,20 +140,25 @@ then (a particular set of observable consequences should occur).  The behaviour 
  
 ## BDD example with Bug Match
 As a user, when I arrive at the webpage. 
-I want to be able to click a maximum of two squares, so that each square flips and displays an image.
-I want the flipped squares if they don’t match to be flipped back in the game so I can have another go.
-I want the flipped squares if they do match to be flipped back and disabled, and be counted as a match on the scoreboard.
+- I want to be able to click a maximum of two squares, so that each square flips and displays an image.
+- I want the flipped squares if they don’t match to be flipped back in the game so I can have another go.
+- I want the flipped squares if they do match to be flipped back and disabled, and be counted as a match on the scoreboard.
 
 ### Testing User Stories
 "**_As a visiting user, I would like to_** _______________"
 
 - connect with the game developer via email.
-The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (in this case Gmail), build an email template, and send without any server code.
+The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (in this case Gmail), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
 
 ![View](/docs/manual-testing/user-stories-with-modal.png)
 
+## Example message received using tremplate fields in Email JS
+
+![View](/docs/manual-testing/email-message.png)
+
 - easily understand how to play the game.
 Instructions on how to play the game are included above the game board.
+
 ![View](/docs/manual-testing/user-stories-start.png)
 
 - see my progress.
@@ -164,24 +169,37 @@ The scoreboard rewards the user with a point every time there is a match.
 - reset the game at any point.
 The game has a Play Again button to allow the user to restart the game from the beginning at any point during the game.
 
+## Code Validation
+### HTML validation
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   ![W3C Markup Validator](docs/manual-testing/html-validator.png)
 
-### Further Testing
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+### CSS Validation
+-   ![W3C CSS Validator](docs/manual-testing/css-validator.png)
 
-### Manual testing
-- Validators
-- PageSpeed Insights
-- Browser testing matrix
+### JS Validation
+Script.js was tested in JS Hint and displayed 31 warnings primarily retalted to ES6 JavaScript features. The undefined variables relate to JQuery used for modal functionality.
 
-### Known Bugs
+-   ![JS Hint](docs/manual-testing/js-validator.png)
+
+
+
+### Browser testing
+-   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop & Mobile. Testing was done online except for my iPhone 11 and iMac 27". I used webkit prefixes to try and solve the issues in IOS which mean the background css images do not show. However, more research needs to be done.
+
+-   ![Matrix](docs/manual-testing/testing-matrix-m2.png)
+
+Responsive views of the project can be seen [here](docs/manual-testing/responsive-views/)
+
+### Performance
+I checked the webpage for performance, accessibility, best practices and SEO, on desktop and mobile layouts, with an overall score of 95 for performance.
+
+-   ![Google PageSpeed Insights](docs/manual-testing/performance-m2.png)
+
+## Known Bugs
 -   On IOS the background CSS images are not showing. I used [Autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes although the issue remains to be solved.
--   When using Jest, the test environment won't run unless Line 10 & the modal is commented out. I research this [here](https://github.com/reactjs/react-modal/issues/71) which indicates there could be an issue relating to the DOM.
+-   When using Jest, the test environment won't run unless Line 10 & the modal is commented out. I researched this [here](https://github.com/reactjs/react-modal/issues/71) which indicates there could be an issue relating to the DOM.
 ![View](/docs/jest_tests/issue-affecting-jest-test.png)
 
 ## Deployment
