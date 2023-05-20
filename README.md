@@ -2,7 +2,7 @@
 
 [View the live project here.](https://rachelfurlong-dev.github.io/bug-match-M2/)
 
-This is a memory game for my Milestone 2 project by a fictional company called Elephant Games, designed as part of a series of memory games in different formats. The main target users are parents, who want to help their child develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
+This is a memory game for my Milestone 2 project by a fictional company called Elephant Games, designed as part of a series of memory games to be added to the site in different formats. The main target users are parents and their child, to help children develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
 
 <h2 align="center"><img src="docs/responsive-screenshot.png"></h2>
 
@@ -34,7 +34,7 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 #### Typography
  The Roboto font via [Google Fonts:](https://fonts.google.com/) is the main font used throughout the website with Sans Serif as the fallback font in case for any reason the font cannot be displayed in a browser correctly.
 
-#### Color Scheme:
+### Color Scheme:
 
 *Palette*: **Flip Card Memory Game**
 
@@ -58,14 +58,15 @@ Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 ### Features
 
 -   Create a board of 16 cards which can be flipped when clicking on the card.
--   If two selected cards match, to flip back and hidden & cannot be reselected.
+-   If two selected cards match, to flip cards back and & which cannot be reselected.
 -   Add a score button to show when there is a match.
 -   Be able to reset the game.
--   Be able to message Game Company about more games.
+-   Be able to message Elephant Games about future game development.
 -   Work on desktop and mobile screens accross browsers.
+-   Randomise the display of cards at reset.
 
 ### Additional features to be implemented
--  Randomise the display of cards at reset.
+
 -  Add a score button when cards do not match.
 -  Add a timer to the game.
 
@@ -119,8 +120,8 @@ I have used the Jest JavaScript Testing Framework to develop automated test for 
 
 I have used Jest as an introduction to automated testing to test code already written. The next stage in my development will be to implement this testing process as the product is being built.
 
-### Prerequisites Required:
-Before running the tests, some modification is required to index.html and script.js: comment out the EmailJS & modal scripts as well as line 15 appending the squares container to the DOM. Further information can be seen in the Bugs section below for an explanation regarding running the test environment.
+### Requirements:
+Before running the tests, a modification is required in script.js: comment out the EmailJS & modal scripts as well as line 15 appending the squares container to the DOM. 
 
 ### Testing the Array of Objects 
 Checks if an array of objects: 
@@ -135,8 +136,7 @@ Checks if an array of objects:
 ![View](/docs/jest_tests/total-tests-passed.png)
 
 ## Manual testing (BDD)
-Behaviour-Driven development is based on  the expected outcome of an action, to see if an app behaves as expected. BDD builds on the user stories, extending this by adding Given, Then, and When  - so given (a specific context), when (a specific action is carried out),  
-then (a particular set of observable consequences should occur).  The behaviour is now testable, and  repeatable.
+Behaviour-Driven development is based on  the expected outcome of an action, to see if an app behaves as expected. BDD builds on the user stories, extending this by adding Given, Then, and When  - so given (a specific context), when (a specific action is carried out), then (a particular set of observable consequences should occur). The behaviour is now testable, and repeatable.
  
 ## BDD example with Bug Match
 As a user, when I arrive at the webpage. 
@@ -144,30 +144,36 @@ As a user, when I arrive at the webpage.
 - I want the flipped squares if they don’t match to be flipped back in the game so I can have another go.
 - I want the flipped squares if they do match to be flipped back and disabled, and be counted as a match on the scoreboard.
 
-### Testing User Stories
+## Testing User Stories
 "**_As a visiting user, I would like to_** _______________"
 
-- connect with the game developer via email.
-The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (in this case Gmail), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
+- play a memory game that is visually engaging and educational:
+I have created a set of insect robot images using Stable Diffusion designed to make the game appealing and fun for children to use. The images can be viewed in the folder [here](/assets/img/).
 
-![View](/docs/manual-testing/user-stories-with-modal.png)
-
-## Example message received using tremplate fields in Email JS
-
-![View](/docs/manual-testing/email-message.png)
-
-- easily understand how to play the game.
-Instructions on how to play the game are included above the game board.
+- easily understand how to play the game:
+Instructions on how to play the game are included above the grid of images.
 
 ![View](/docs/manual-testing/user-stories-start.png)
 
-- see my progress.
+- see my progress:
 The scoreboard rewards the user with a point every time there is a match.
 
 ![View](/docs/manual-testing/user-stories-end.png)
 
-- reset the game at any point.
+- reset the game at any point:
 The game has a Play Again button to allow the user to restart the game from the beginning at any point during the game.
+
+- as a parent, observe that the game develops my child's focus and concentration skills:
+The game displayes the images in a random order each time so the child cannot predict where the matching images are. The game can be easily reset to have another go.
+
+- as a parent connect with the game developer via email:
+The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (in this case Gmail), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
+
+![View](/docs/manual-testing/user-stories-with-modal.png)
+
+## Example message received using template fields in Email JS
+
+![View](/docs/manual-testing/email-message.png)
 
 ## Code Validation
 ### HTML validation
@@ -182,20 +188,18 @@ Script.js was tested in JS Hint and displayed 31 warnings primarily retalted to 
 
 -   ![JS Hint](docs/manual-testing/js-validator.png)
 
-
-
 ### Browser testing
 -   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop & Mobile. Testing was done online except for my iPhone 11 and iMac 27". I used webkit prefixes to try and solve the issues in IOS which mean the background css images do not show. However, more research needs to be done.
 
--   ![Matrix](docs/manual-testing/testing-matrix-m2.png)
+-   ![Matrix](docs/manual-testing/testing-matrix-m2.png )
 
-Responsive views of the project can be seen [here](docs/manual-testing/responsive-views/)
+Responsive views of the project can be seen in the testing folder [here](docs/manual-testing/responsive-views/)
 
 ### Performance
 I checked the webpage for performance, accessibility, best practices and SEO, on desktop and mobile layouts, with an overall score of 95 for performance.
 
--   ![Google PageSpeed Insights](docs/manual-testing/performance-m2.png)
+![Google PageSpeed Insights](docs/manual-testing/performance-m2.png)
 
 ## Known Bugs
 -   On IOS the background CSS images are not showing. I used [Autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes although the issue remains to be solved.
@@ -270,8 +274,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledgements
 
--   Tim Nelson for continuous helpful feedback.
+-   My mentor Tim Nelson for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
-
--   Chris Dixon for JavSscript games & memory game introduction.
