@@ -16,11 +16,9 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 
 - :white_check_mark: *my child enjoys using and to have fun*.
 - :white_check_mark: *which are at the same time visually engaging and educational*.
-- :white_check_mark: *with functionality that my child enjoys interacting with*.
-- :white_check_mark: *which helps develop my childs memory skills in an enjoyable way*.
+- :white_check_mark: *that develops my child's memory and concentration skills*.
 - :white_check_mark: *which counts the score of the matches my child gets right*.
 - :white_check_mark: *which allows my child to reset the game*.
-- :white_check_mark: *that develops my child's focus and concentration skills*.
 - :white_check_mark: *where I can contact the creators about future games available*.
 - :white_check_mark: *my child to be able to view the site* from **any device** *(mobile, tablet, desktop)*.
 - :white_check_mark: *which randomises the order of the cards at each reset*.
@@ -57,13 +55,14 @@ Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 
 ### Features
 
--   Create a board of 16 cards which can be flipped when clicking on the card.
+-   A board of 16 cards where a maximum of 2 cards at a time can be flipped when clicking on the card, which flip back if they do not match.
 -   If two selected cards match, to flip cards back and & which cannot be reselected.
--   Add a score button to show when there is a match.
--   Be able to reset the game.
--   Be able to message Elephant Games about future game development.
+-   A score button to increment when there is a match.
+-   Ability to reset the game.
+-   Ability to message Elephant Games about future game development.
 -   Work on desktop and mobile screens accross browsers.
--   Randomise the display of cards at reset.
+-   A randomised display of cards at reset.
+-   A 404 page for users who direct to a non-existent page or resource are redirected back to the main page without having to use browser navigation buttons.
 
 ### Additional features to be implemented
 
