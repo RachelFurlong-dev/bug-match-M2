@@ -22,7 +22,7 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 - :white_check_mark: *where I can contact the creators about future games available*.
 - :white_check_mark: *my child to be able to view the site* from **any device** *(mobile, tablet, desktop)*.
 - :white_check_mark: *which randomises the order of the cards at each reset*.
-- :x: *which challenges my child with has a timer to compete against*.
+- :x: *which challenges my child with a timer to compete against*.
 - :x: *which counts both the correct and incorrect matches*.
 - :x: *which  has additional levels and increases the number of cards to match*.
 - :x: *which rewards success as my child improves at the game*.
@@ -147,14 +147,14 @@ As a user, when I arrive at the webpage.
 "**_As a visiting user, I would like to_** _______________"
 
 - play a memory game that is visually engaging and educational:
-I have created a set of insect robot images using Stable Diffusion designed to make the game appealing and fun for children to use. The images can be viewed in the folder [here](/assets/img/).
+I have created a set of insect robot images designed to make the game appealing and fun for children to use. The images can be viewed in the folder [here](/assets/img/).
 
 - easily understand how to play the game:
 Instructions on how to play the game are included above the grid of images.
 
 ![View](/docs/manual-testing/user-stories-start.png)
 
-- see my progress:
+- see progress:
 The scoreboard rewards the user with a point every time there is a match.
 
 ![View](/docs/manual-testing/user-stories-end.png)
@@ -166,7 +166,7 @@ The game has a Play Again button to allow the user to restart the game from the 
 The game displayes the images in a random order each time so the child cannot predict where the matching images are. The game can be easily reset to have another go.
 
 - as a parent connect with the game developer via email:
-The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (in this case Gmail), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
+The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (Gmail is used in this project), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
 
 ![View](/docs/manual-testing/user-stories-with-modal.png)
 
@@ -177,21 +177,21 @@ The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript li
 ## Code Validation
 ### HTML validation
 
--   ![W3C Markup Validator](docs/manual-testing/html-validator.png)
+![W3C Markup Validator](docs/manual-testing/html-validator.png)
 
 ### CSS Validation
--   ![W3C CSS Validator](docs/manual-testing/css-validator.png)
+![W3C CSS Validator](docs/manual-testing/css-validator.png)
 
 ### JS Validation
 Script.js was tested in JS Hint and displayed 31 warnings primarily retalted to ES6 JavaScript features. The undefined variables relate to JQuery used for modal functionality.
 
--   ![JS Hint](docs/manual-testing/js-validator.png)
+![JS Hint](docs/manual-testing/js-validator.png)
 
 ### Browser testing
 -   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop & Mobile. Testing was done online except for my iPhone 11 and iMac 27". I used webkit prefixes to try and solve the issues in IOS which mean the background css images do not show. However, more research needs to be done.
 
--   ![Matrix](docs/manual-testing/testing-matrix-m2.png )
+![Matrix](docs/manual-testing/testing-matrix-m2.png )
 
 Responsive views of the project can be seen in the testing folder [here](docs/manual-testing/responsive-views/)
 
