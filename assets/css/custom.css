@@ -141,7 +141,7 @@ h3 {
     color: #fff;
 }
 
-.controls{
+/*.controls{
     max-width: 650px;
     margin: 0 auto;
     display: -webkit-box;
@@ -152,7 +152,7 @@ h3 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; 
-}
+}*/
 
 /*reset button styling*/
 
