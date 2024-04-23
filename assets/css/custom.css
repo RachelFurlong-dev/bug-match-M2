@@ -10,7 +10,7 @@
 body{
     font-family: "Exo 2", sans-serif;
     background-image: url("../img/butterflys.jpg");
-    background-color: rgb(63, 2, 113);
+    background-color: #ff7f00;);
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-position: center center; /* Center the image horizontally and vertically */
     background-size: cover; /* Cover the entire element with the background image */
@@ -123,6 +123,15 @@ h3 {
 .back,
 .front{
     position:absolute;
+    border: 2px solid white !important;
+    border-radius:10px;
+    box-shadow: 
+            0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 .8rem  #fff,
+            0 0 0.3rem #fff,
+            0 0 0.3rem #fff,
+            inset 0 0 0.1rem #fff;
     -webkit-backface-visibility:hidden;
             backface-visibility:hidden;
 }
@@ -147,7 +156,7 @@ h3 {
 }
 
 .ismatch .front{
-    background: rgb(63, 2, 113)!important;
+    background: rgb(255, 127, 0)!important;
     border: 5px solid white !important;
 }
 
