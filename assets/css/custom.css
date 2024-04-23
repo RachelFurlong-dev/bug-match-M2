@@ -11,10 +11,9 @@ body{
     font-family: "Exo 2", sans-serif;
     background-image: url("../img/butterflys.jpg");
     background-color: #ff7f00;);
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-position: center center; /* Center the image horizontally and vertically */
-    background-size: cover; /* Cover the entire element with the background image */
-    /*background-color: rgb(63, 2, 113);*/
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover; 
 }
 
 /*navbar*/
