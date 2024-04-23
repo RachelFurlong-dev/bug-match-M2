@@ -183,5 +183,15 @@ document.getElementById('email').value = '';
 document.getElementById('message').value = '';
 });
 
+//change theme background
+const images = ["url('assets/img/spider.jpg')", "url('assets/img/bee.jpg')", "url('assets/img/ladybug.jpg')", "url('assets/img/moths.jpg')"];
+let currentIndex = 0;
+
+document.getElementById('mybtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.body.style.backgroundImage = images[currentIndex];
+});
+
+
 
 //module.exports = cardArray;
