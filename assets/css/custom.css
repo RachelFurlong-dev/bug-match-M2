@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 /*Global styles*/
 *,
 *::before,
@@ -8,8 +8,13 @@
 }
 
 body{
-    font-family: Poppins, sans-serif;
+    font-family: "Exo 2", sans-serif;
+    background-image: url("../img/butterflys.jpg");
     background-color: rgb(63, 2, 113);
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-size: cover; /* Cover the entire element with the background image */
+    /*background-color: rgb(63, 2, 113);*/
 }
 
 /*navbar*/
@@ -108,7 +113,7 @@ h3 {
 }
 
 .front{
-    background: #ff7f00 url('../img/q-mark.png') no-repeat center center / contain;
+    background: #ff7f00 url('../img/bug.png') no-repeat center center / contain;
     border: 5px solid white !important;
 }
 
