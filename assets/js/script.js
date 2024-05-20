@@ -7,10 +7,27 @@ let prevTarget = null;
 let gameStarted = false;
 let gameOver = false;
 
- /*reload game
+ //reload game
  function playAgain() {
     window.location.reload();
-}*/
+}
+
+function startGame() {
+    gameStarted = true; //initialise game variables
+    gameOver = false;
+    document.getElementById("start-btn").style.display="none";//hide start button
+    document.getElementById("quit-btn").style.display="block";//show reset button
+}
+
+//add event listener to start button
+document.getElementById("start-btn"). addEventListener("click", () => {
+    if (!gameStarted) {
+        startGame();
+    }
+    console.log("started game");
+});
+
+
 
 
 
