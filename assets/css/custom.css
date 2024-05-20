@@ -204,7 +204,7 @@ h2 {
 }
 
 .bg-not-here{
-    background-color:#ff7f00;
+    background-color:#ff7f00 !important;
     color:#fff !important;
 }
 .footer-container{
