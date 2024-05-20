@@ -38,6 +38,7 @@ function startTimer() {
 function startGame() {
     gameStarted = true; //initialise game variables
     gameOver = false;
+    startTimer();
     document.getElementById("start-btn").style.display="none";//hide start button
     document.getElementById("quit-btn").style.display="block";//show reset button
 }
