@@ -1,9 +1,20 @@
 let score = 0;
+let clickCount = 0;
+let cardClickOne = '';
+let cardClickTwo = '';
+let prevTarget = null;
+//define game variables
+let gameStarted = false;
+let gameOver = false;
 
- //reload game
+ /*reload game
  function playAgain() {
     window.location.reload();
-}
+}*/
+
+
+
+///////////////Boardgame functionality////////////////
 
 const board = document.querySelector("#board");
 
@@ -13,11 +24,6 @@ squaresContainer.setAttribute('class', 'square');
 
 //append the section to the board div
 board.appendChild(squaresContainer);
-
-let clickCount = 0;
-let cardClickOne = '';
-let cardClickTwo = '';
-let prevTarget = null;
 
 const cardArray = [
 {
