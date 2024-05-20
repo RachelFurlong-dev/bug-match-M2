@@ -10,7 +10,7 @@
 body{
     font-family: "Exo 2", sans-serif;
     background-image: url("../img/butterflys.jpg");
-    background-color: #ff7f00;);
+    background-color: #000;
     background-repeat: no-repeat; 
     background-position: center center; 
     background-size: cover; 
@@ -210,7 +210,7 @@ footer a {
 }
 
 /* 404 styles*/
- html, main {
+main {
     height: 100%;
     margin: 0;
     display: flex;
