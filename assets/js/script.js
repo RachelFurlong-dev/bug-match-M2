@@ -23,7 +23,7 @@ document.getElementById("quit-btn").style.display = "none";
 function endGame() {
 	gameStarted = false;
 	gameOver = true;
-	playAgain();
+    playAgain();
 	clearInterval(timerInterval); //stop timer
 	document.getElementById("start-btn").style.display = "block";
 	document.getElementById("quit-btn").style.display = "none";
@@ -255,7 +255,7 @@ document.getElementById('mybtn').addEventListener('click', () => {
 });
 
 //Get current year
-const currentYear =  new Date().getFullYear;
+const currentYear =  new Date().getFullYear();
 //update html document with the current year
 document.getElementById('currentYear').textContent = currentYear;
 
