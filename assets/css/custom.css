@@ -190,23 +190,6 @@ h2 {
     cursor:pointer; 
 }
 
-/* 404 styles*/
-.return-button{
-    font-family: Roboto, sans-serif;
-    font-weight:bold;
-    text-transform: uppercase;
-    color: rgb(63, 2, 113);
-    font-size: 1.2rem;
-    border-radius:5px;
-    padding: 15px;
-    margin:10px 0px 10px 0px;
-    cursor:pointer;
-}
-
-.bg-not-here{
-    background-color:#ff7f00 !important;
-    color:#fff !important;
-}
 .footer-container{
     background-color:#000;
     color: #fff;
@@ -224,4 +207,38 @@ footer a {
 
 #copyright {
     text-transform: capitalize;
+}
+
+/* 404 styles*/
+ html, main {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.return-button{
+    font-family: "Exo 2", sans-serif;
+    font-weight:400;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #ff7f00;
+    font-size: 1.2rem;
+    border-radius:5px;
+    padding: 15px;
+    margin:10px 0px 10px 0px;
+    cursor:pointer;
+}
+
+.image-container {
+    text-align:center;
+}
+
+.bug2{
+    width:300px;
+}
+
+.text-box{
+    padding: 0 20px;
 }
