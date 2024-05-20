@@ -6,10 +6,33 @@ let prevTarget = null;
 //define game variables
 let gameStarted = false;
 let gameOver = false;
+let timerInterval;
+let timerDuration = 60; //60 seconds
+let quitBtn = document.getElementById("quit-btn");
 
  //reload game
  function playAgain() {
     window.location.reload();
+}
+
+quitBtn.addEventListener("click", playAgain);
+
+document.getElementById("start-btn").style.display = "block";
+document.getElementById("quit-btn").style.display = "none";
+
+function startTimer() {
+    let timer = timerDuration;
+    // Update the timer display every second
+    timerInterval = setInterval(function() {
+        // Update UI to display remaining time
+        document.getElementById("timerDisplay").textContent = timer;
+        // Decrement the timer
+        timer--;
+        // Check if the timer has reached zero
+        if (timer < 0 || score === 8) {
+            endGame(); // End the game if the timer runs out or 8 cards match
+        }
+    }, 1000);
 }
 
 function startGame() {
@@ -26,10 +49,6 @@ document.getElementById("start-btn"). addEventListener("click", () => {
     }
     console.log("started game");
 });
-
-
-
-
 
 ///////////////Boardgame functionality////////////////
 
@@ -175,8 +194,8 @@ squaresContainer.addEventListener('click', event => {
         }
     });
 
-const playAgainBtn = document.getElementById('playagain');
-playAgainBtn.addEventListener('click', playAgain);
+/*const playAgainBtn = document.getElementById('playagain');
+playAgainBtn.addEventListener('click', playAgain);*/
 
 //bootstrap modal js
 $('#myModal').on('shown.bs.modal', function () {
