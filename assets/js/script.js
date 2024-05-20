@@ -192,6 +192,9 @@ document.getElementById('mybtn').addEventListener('click', () => {
     document.body.style.backgroundImage = images[currentIndex];
 });
 
-
+//Get current year
+const currentYear =  new Date().getFullYear;
+//update html document with the current year
+document.getElementById('currentYear').textContent = currentYear;
 
 //module.exports = cardArray;
