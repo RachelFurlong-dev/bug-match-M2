@@ -20,6 +20,16 @@ quitBtn.addEventListener("click", playAgain);
 document.getElementById("start-btn").style.display = "block";
 document.getElementById("quit-btn").style.display = "none";
 
+function endGame() {
+    gameStarted = false;
+    gameOver = true;
+    playAgain();
+    clearInterval(timerInterval); //stop timer
+    document.getElementById("start-btn").style.display = "block";
+    document.getElementById("quit-btn").style.display = "none";
+
+}
+
 function startTimer() {
     let timer = timerDuration;
     // Update the timer display every second
