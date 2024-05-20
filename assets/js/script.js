@@ -137,7 +137,12 @@ const resetCard = () => {
 
 //listening for clicks and checking for match
 
+//used ChatGPT to solve how to disable the deck before startGame
 squaresContainer.addEventListener('click', event => {
+    // Check if the game has started
+    if (!gameStarted) {
+        return; // Exit the event listener if the game hasn't started
+    }
     const clicked = event.target;
     
     if (clicked.nodeName === 'SECTION' ||
