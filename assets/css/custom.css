@@ -222,4 +222,19 @@ h2 {
 }
 .footer-container{
     background-color:#000;
+    color: #fff;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    padding:20px;
+
+}
+
+footer a {
+    color:#fff;
+    font-size: 1rem;
+}
+
+#copyright {
+    text-transform: capitalize;
 }
