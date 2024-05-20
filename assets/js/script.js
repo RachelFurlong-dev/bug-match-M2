@@ -21,13 +21,17 @@ document.getElementById("start-btn").style.display = "block";
 document.getElementById("quit-btn").style.display = "none";
 
 function endGame() {
-    gameStarted = false;
-    gameOver = true;
-    playAgain();
-    clearInterval(timerInterval); //stop timer
-    document.getElementById("start-btn").style.display = "block";
-    document.getElementById("quit-btn").style.display = "none";
-
+	gameStarted = false;
+	gameOver = true;
+	playAgain();
+	clearInterval(timerInterval); //stop timer
+	document.getElementById("start-btn").style.display = "block";
+	document.getElementById("quit-btn").style.display = "none";
+	if(score === 8) {
+		alert("Well done you won!");
+	} else {
+		alert("Better luck next time");
+	}
 }
 
 function startTimer() {
