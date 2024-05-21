@@ -178,11 +178,11 @@ Users can click the Get in Touch link in the footer to access the contact form. 
 ## Code Validation
 ### HTML validation
 
-![index.html validation](docs/manual-testing/home-html-validation.png)
-![404.html validation](docs/manual-testing/404-html-validation.png)
+![index.html validation](docs/manual-testing/validators/home-html-validation.pnghome-html-validation.png)
+![404.html validation](docs/manual-testing/validators/404-html-validation.png404-html-validation.png)
 
 ### CSS Validation
-![W3C CSS Validator](docs/manual-testing/css-validator.png)
+![W3C CSS Validator](docs/manual-testing/validators/css-validator.png)
 
 ### JS Validation
 Metrics:
@@ -191,7 +191,7 @@ Function with the largest signature take 1 arguments, while the median is 0.
 Largest function has 21 statements in it, while the median is 3.
 The most complex function has a cyclomatic complexity value of 11 while the median is 1.
 
-![JS Hint](docs/manual-testing/js_validator.png)
+![JS Hint](docs/manual-testing/validators/js_validator.png)
 
 ### Browser testing
 -   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
@@ -204,7 +204,8 @@ Responsive views of the project can be seen in the testing folder [here](docs/ma
 ### Performance
 I checked the webpage for performance, accessibility, best practices and SEO, on desktop and mobile layouts, with an overall score of 95 for performance.
 
-![Google PageSpeed Insights](docs/manual-testing/performance-m2.png)
+![Google PageSpeed Insights](docs/manual-testing/validators/mobile-lighthouse.png)
+![Google PageSpeed Insights](docs/manual-testing/validators/desktop-lighthouse.png)
 
 ## Known Bugs
 -   On IOS the background CSS images are not showing. I used [Autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes although the issue remains to be solved.
