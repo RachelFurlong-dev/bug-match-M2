@@ -4,7 +4,7 @@
 
 This is a memory game for my Milestone 2 project by a fictional company called Elephant Games, designed as part of a series of memory games to be added to the site in different formats. The main target users are parents and their child, to help children develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
 
-<h2 align="center"><img src="docs/responsive-screenshot.png"></h2>
+<h2 align="center"><img src="docs/mockup.png"></h2>
 
 ### User Stories:
 
@@ -19,18 +19,18 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 - :white_check_mark: *that develops my child's memory and concentration skills*.
 - :white_check_mark: *which counts the score of the matches my child gets right*.
 - :white_check_mark: *which allows my child to reset the game*.
-- :white_check_mark: *where I can contact the creators about future games available*.
+- :white_check_mark:: *which challenges my child with a timer to compete against*.
+- :white_check_mark: *where I can contact the creators about future games 
+available*.
 - :white_check_mark: *my child to be able to view the site* from **any device** *(mobile, tablet, desktop)*.
 - :white_check_mark: *which randomises the order of the cards at each reset*.
-- :x: *which challenges my child with a timer to compete against*.
-- :x: *which counts both the correct and incorrect matches*.
 - :x: *which  has additional levels and increases the number of cards to match*.
 - :x: *which rewards success as my child improves at the game*.
 
 ## Design:
 
 #### Typography
- The Roboto font via [Google Fonts:](https://fonts.google.com/) is the main font used throughout the website with Sans Serif as the fallback font in case for any reason the font cannot be displayed in a browser correctly.
+ The Exo 2 font, a geometric sans serif font with a technological feel was selected via [Google Fonts:](https://fonts.google.com/) and is used throughout the website with sans serif as the fallback font in case for any reason the font cannot be displayed in a browser correctly.
 
 ### Color Scheme:
 
@@ -38,8 +38,8 @@ This is a memory game for my Milestone 2 project by a fictional company called E
 
 | Cards | Background |
 | :---: | :---: |
-| ![#FF7F00](https://via.placeholder.com/15/FF7F00/FF7F00) | ![#3F0270](https://via.placeholder.com/15/3F0270/3F0270) |
-| #FF7F00 | #3F0270 |  
+| ![#FF7F00](https://via.placeholder.com/15/FF7F00/FF7F00) | ![#000](https://via.placeholder.com/15/000/000) |
+| #FF7F00 | #000 |  
 
 ### Imagery:
 [Stable Diffusion](https://stablediffusionweb.com/) generated the insect robots to which I added bright colour backgrounds to make the cards easier to identify.
@@ -60,14 +60,15 @@ Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 -   A score button to increment when there is a match.
 -   Ability to reset the game.
 -   Ability to message Elephant Games about future game development.
--   Work on desktop and mobile screens accross browsers.
--   A randomised display of cards at reset.
+-   Work on desktop and mobile screens across browsers.
+-   A randomised display of cards at start.
+-   Ability for the user to change the background to select different themes.
 -   A 404 page for users who direct to a non-existent page or resource are redirected back to the main page without having to use browser navigation buttons.
 
 ### Additional features to be implemented
 
 -  Add a score button when cards do not match.
--  Add a timer to the game.
+-  Add rewards for successful games completed.
 
 ## Technologies Used
 
@@ -152,23 +153,23 @@ I have created a set of insect robot images designed to make the game appealing 
 - easily understand how to play the game:
 Instructions on how to play the game are included above the grid of images.
 
-![View](/docs/manual-testing/user-stories-start.png)
+![View](/docs/manual-testing/userstories-start.png)
 
 - see progress:
 The scoreboard rewards the user with a point every time there is a match.
 
-![View](/docs/manual-testing/user-stories-end.png)
+![View](/docs/manual-testing/userstories-end.png)
 
 - reset the game at any point:
-The game has a Play Again button to allow the user to restart the game from the beginning at any point during the game.
+The game has a reset button to allow the user to restart the game from the beginning at any point during the game.The reset button will only appear once the game has started and the game is in progress.
 
 - as a parent, observe that the game develops my child's focus and concentration skills:
-The game displayes the images in a random order each time so the child cannot predict where the matching images are. The game can be easily reset to have another go.
+The game displayes the images in a random order each time so the child cannot predict where the matching images are. The user gets 60 seconds to complete the game and receive a 'Success' message if completed in time or a 'Try again' message if not. The game can be easily reset to have another go.
 
 - as a parent connect with the game developer via email:
-The feature utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (Gmail is used in this project), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
+Users can click the Get in Touch link in the footer to access the contact form. The contact form utilises the JavaScript library, EmailJS. EmailJS is a JavaScript library that helps send emails using only client-side technologies, enabling a connection to a chosen email service (Gmail is used in this project), build an email template, and send without any server code. The input fields are required and the users are prompted to fill them if any input field is left empty. When the user has sent the form, they receive a pop-up message to reasure them the email has been sent and the developer will reply soon.
 
-![View](/docs/manual-testing/user-stories-with-modal.png)
+![View](/docs/manual-testing/modal.png)
 
 ## Example message received using template fields in Email JS
 
