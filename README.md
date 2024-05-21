@@ -178,7 +178,8 @@ Users can click the Get in Touch link in the footer to access the contact form. 
 ## Code Validation
 ### HTML validation
 
-![W3C Markup Validator](docs/manual-testing/html-validator.png)
+![index.html validation](docs/manual-testing/home-html-validation.png)
+![404.html validation](docs/manual-testing/404-html-validation.png)
 
 ### CSS Validation
 ![W3C CSS Validator](docs/manual-testing/css-validator.png)
