@@ -184,9 +184,13 @@ Users can click the Get in Touch link in the footer to access the contact form. 
 ![W3C CSS Validator](docs/manual-testing/css-validator.png)
 
 ### JS Validation
-Script.js was tested in JS Hint and displayed 31 warnings primarily retalted to ES6 JavaScript features. The undefined variables relate to JQuery used for modal functionality.
+Metrics:
+There are 19 functions in this file.
+Function with the largest signature take 1 arguments, while the median is 0.
+Largest function has 21 statements in it, while the median is 3.
+The most complex function has a cyclomatic complexity value of 11 while the median is 1.
 
-![JS Hint](docs/manual-testing/js-validator.png)
+![JS Hint](docs/manual-testing/js_validator.png)
 
 ### Browser testing
 -   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
