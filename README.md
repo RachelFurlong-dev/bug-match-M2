@@ -260,6 +260,12 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 ## Credits
+### Theme Images
+
+- Butterflys: Photo by Michael Jerrard [Unsplash](https://unsplash.com/photos/blue-and-brown-butterfly-painting-E51NYXD8uEg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Ladybirds: Photo by Lance Reis, [Unsplash](https://unsplash.com/photos/a-pile-of-brown-bugs-sitting-on-top-of-a-rock-To4wQF8IEso?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Bee: Photo by Ante Hamersmit, [Unsplash](https://unsplash.com/photos/a-group-of-bees-bnuMcBOaanY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Bug Icon: [Freepik-Flaticon](https://www.flaticon.com/free-icons/bug)
 
 ### Code
 
