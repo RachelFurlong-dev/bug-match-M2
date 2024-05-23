@@ -171,14 +171,14 @@ const resetCard = () => {
 
 //listening for clicks and checking for match
 
-//used ChatGPT to solve how to disable the deck before startGame
+//credit: used ChatGPT to solve how to disable the deck before startGame
 squaresContainer.addEventListener('click', event => {
     // Check if the game has started
     if (!gameStarted) {
         return; // Exit the event listener if the game hasn't started
     }
     const clicked = event.target;
-    
+//credit: Code for listening for clicks & matches taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ and adapted slightly for the needs of this project   
     if (clicked.nodeName === 'SECTION' ||
         clicked === prevTarget || 
         clicked.parentNode.classList.contains('squareclick') || 
@@ -208,9 +208,6 @@ squaresContainer.addEventListener('click', event => {
           prevTarget = clicked;
         }
     });
-
-/*const playAgainBtn = document.getElementById('playagain');
-playAgainBtn.addEventListener('click', playAgain);*/
 
 //bootstrap modal js
 $('#myModal').on('shown.bs.modal', function () {
@@ -253,7 +250,7 @@ document.getElementById('mybtn').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % images.length;
     document.body.style.backgroundImage = images[currentIndex];
 });
-
+//Copyright credit
 //Get current year
 const currentYear =  new Date().getFullYear();
 //update html document with the current year

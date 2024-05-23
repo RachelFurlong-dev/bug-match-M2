@@ -4,7 +4,7 @@
 
 This is a memory game for my Milestone 2 project by a fictional company called Elephant Games, designed as part of a series of memory games to be added to the site in different formats. The main target users are parents and their child, to help children develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
 
-<h2 align="center"><img src="/assets/img/mockup.png"></h2>
+<h2 align="center"><img src="assets/img/mockup.png"></h2>
 
 ### User Stories:
 
@@ -178,8 +178,8 @@ Users can click the Get in Touch link in the footer to access the contact form. 
 ## Code Validation
 ### HTML validation
 
-![index.html validation](docs/manual-testing/validators/home-html-validation.pnghome-html-validation.png)
-![404.html validation](docs/manual-testing/validators/404-html-validation.png404-html-validation.png)
+![index.html validation](docs/manual-testing/validators/home-html-validation.png)
+![404.html validation](docs/manual-testing/validators/404-html-validation.png)
 
 ### CSS Validation
 ![W3C CSS Validator](docs/manual-testing/validators/css-validator.png)
