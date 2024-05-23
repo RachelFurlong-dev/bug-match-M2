@@ -2,7 +2,7 @@
 
 [View the live project here.](https://rachelfurlong-dev.github.io/bug-match-M2/)
 
-This is a memory game for my Milestone 2 project by a fictional company called Elephant Games, designed as part of a series of memory games to be added to the site in different formats. The main target users are parents and their child, to help children develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
+This is a memory game for my Milestone 2 project by a fictional company called Weevil Games, designed as part of a series of memory games to be added to the site in different formats. The main target users are parents and their children, to help develop working memory skills in an enjoyable way and have fun. (Child age range: 4 – 9years.)
 
 <h2 align="center"><img src="assets/img/mockup.png"></h2>
 
@@ -55,20 +55,23 @@ Desktop Wireframe ![View](/docs/wireframes/bm-desktop-layout.png)
 
 ### Features
 
+-   A randomised display of cards at start of game.
 -   A board of 16 cards where a maximum of 2 cards at a time can be flipped when clicking on the card, which flip back if they do not match.
 -   If two selected cards match, to flip cards back and & which cannot be reselected.
--   A score button to increment when there is a match.
--   Ability to reset the game.
--   Ability to message Elephant Games about future game development.
--   Work on desktop and mobile screens across browsers.
--   A randomised display of cards at start.
+-   A score display to increment when there is a match.
+-   Ability to start and reset the game. cards are disabled before start of game.
+-   A countdown timer lasting 60 seconds within which to complete the game successfully.
+-   Feedback to let user know if they were successful or to have another try.
+-   Ability to message Weevil Games with confirmation message.
+-   Work on desktop and mobile screens across a range of browsers.
 -   Ability for the user to change the background to select different themes.
--   A 404 page for users who direct to a non-existent page or resource are redirected back to the main page without having to use browser navigation buttons.
+-   A Copyright message where the date updates every year into the future. 
+-   A 404 page for users who direct to a non-existent page or resource are able to return to the main page without having to use browser navigation buttons.
 
 ### Additional features to be implemented
 
--  Add a score button when cards do not match.
--  Add rewards for successful games completed.
+-  Add additional levels and increase the number of cards to match.
+-  Develop a scoreboard that rewards success over a number of successful trys.
 
 ## Technologies Used
 
@@ -177,6 +180,7 @@ Users can click the Get in Touch link in the footer to access the contact form. 
 
 ## Code Validation
 ### HTML validation
+I used W3C to test  and validate html and css files. 
 
 ![index.html validation](docs/manual-testing/validators/home-html-validation.png)
 ![404.html validation](docs/manual-testing/validators/404-html-validation.png)
@@ -195,14 +199,14 @@ The most complex function has a cyclomatic complexity value of 11 while the medi
 
 ### Browser testing
 -   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop & Mobile. Testing was done online except for my iPhone 11 and iMac 27". I used webkit prefixes to try and solve the issues in IOS which mean the background css images do not show. However, more research needs to be done.
+-   The website was viewed on a variety of devices such as Desktop, Laptop & Mobile. Testing was done online except for my iPhone 11 and iMac 27". I used webkit prefixes to try and solve the issues in IOS which mean the background css images do not show on Safari. However, more research into this needs to be done.
 
 ![Matrix](docs/manual-testing/testing-matrix-m2.png )
 
 Responsive views of the project can be seen in the testing folder [here](docs/manual-testing/responsive-views/)
 
 ### Performance
-I checked the webpage for performance, accessibility, best practices and SEO, on desktop and mobile layouts, with an overall score of 95 for performance.
+ I used Google Dev Tools for for measuring and analysing the performance of the web pages on real devices for performance, accessibility, best practices and SEO, on desktop and mobile layouts, with a score of 100% for accessibility on both desktop and mobile devices.
 
 ![Google PageSpeed Insights](docs/manual-testing/validators/mobile-lighthouse.png)
 ![Google PageSpeed Insights](docs/manual-testing/validators/desktop-lighthouse.png)
